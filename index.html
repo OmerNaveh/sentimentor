@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentimentor</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <h1>Sentimentor</h1>
-    <textarea placeholder="Enter Text Here"></textarea>
+    <textarea id="userText" placeholder="Enter Text Here"></textarea>
+    <button id="checkSentiment">Click Here To See Result</button>
+    <div id="result">
+        <p id="polarity"></p>
+        <p id="type"></p>
+        <img id="loading" src= "https://media2.giphy.com/media/9N1O6wTxervEI/giphy.gif?cid=790b7611851a22fda9c5270020dfea40ea79c955e941aa76&rid=giphy.gif&ct=g">
+    </div>
+    <img id="cat">
 </body>
 </html>
