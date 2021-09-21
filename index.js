@@ -23,9 +23,7 @@ async function useApi()
         if(!sentiment.ok)
         {
             const status = sentiment.status;
-            const catImg= await fetch(`https://http.cat/${status}`, {mode:"no-cors"});
-            const insertCat= document.getElementById("cat");
-            insertCat.src= catImg;
+            getCatpic(status);
         }
         else{ 
             const insertCat= document.getElementById("cat");
@@ -60,5 +58,10 @@ async function useApi()
         const img = document.getElementById("loading");
         img.style.display="none"; //dont show loading image
     }
+}
+async function getCatpic(status)
+{
+    const insertCat= document.getElementById("cat");
+    insertCat.src= `https://http.cat/${status}`;
 }
             
