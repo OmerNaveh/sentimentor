@@ -1,3 +1,32 @@
+h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    color: lightseagreen;
+    font-weight: bolder;
+    text-shadow: 2px 2px navy;
+}
 #loading{
     display: none;
+    margin: auto;
+}
+body{
+    text-align: center;
+    background: rgb(226,92,15);
+    background: linear-gradient(90deg, rgba(226,92,15,0.9023984593837535) 0%, rgba(245,253,45,1) 100%);
+}
+#userText{
+    width: 20rem;
+    height: 4rem;
+    border-color: chartreuse;
+    color: chocolate;
+}
+#cat{
+    height: 400px;
+    width: 400px;
+    display: none;
+    margin: auto;
+}
+button{
+   background-color: hotpink;
+   font-weight: bold;
 }

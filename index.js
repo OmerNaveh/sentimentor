@@ -27,6 +27,7 @@ async function useApi()
         }
         else{ 
             const insertCat= document.getElementById("cat");
+            insertCat.style.display="none";
             insertCat.src= "";}
         const jsonSentiment = await sentiment.json();
         img.style.display= "none"; //remove loadig image
@@ -59,9 +60,10 @@ async function useApi()
         img.style.display="none"; //dont show loading image
     }
 }
-async function getCatpic(status)
+async function getCatpic(status) //display cat pic
 {
     const insertCat= document.getElementById("cat");
+    insertCat.style.display="block"
     insertCat.src= `https://http.cat/${status}`;
 }
             
